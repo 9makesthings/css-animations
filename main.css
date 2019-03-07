@@ -1,0 +1,47 @@
+h1 {
+    animation-name: slidein;
+    animation-duration: 4s;
+    font-style: normal;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        font-style: italic;
+    }
+
+    95% {
+        font-style: italic;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+#soFun {
+    color: rgb(30, 30, 139);
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-left: 100px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
